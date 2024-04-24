@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Kutya" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Kutya teszt" FontSize="40" HorizontalAlignment="Center" Margin="0,128,0,0" VerticalAlignment="Top" Height="80" Width="209"/>
+
     </Grid>
 </Window>
