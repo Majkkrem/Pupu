@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:Pupu"
         mc:Ignorable="d"
         Title="Madár" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock x:Name="txtHealth" Text="Health: 100" Margin="5"/>
+        <TextBlock x:Name="txtMood" Text="Mood: 100" Margin="5"/>
+        <TextBlock x:Name="txtEnergy" Text="Energy: 100" Margin="5"/>
+        <TextBlock x:Name="txtHunger" Text="Hunger: 0" Margin="5"/>
+        <Button x:Name="btnFeed" Content="Feed" Click="btnFeed_Click" Margin="5"/>
+        <Button x:Name="btnPlay" Content="Play" Click="btnPlay_Click" Margin="5"/>
+        <Button x:Name="btnSleep" Content="Sleep" Click="btnSleep_Click" Margin="5"/>
+        <Button x:Name="btnSing" Content="Sing" Click="btnSing_Click" Margin="5"/>
+        <Button x:Name="btnFly" Content="Fly" Click="btnFly_Click" Margin="5"/>
+    </StackPanel>
 </Window>
