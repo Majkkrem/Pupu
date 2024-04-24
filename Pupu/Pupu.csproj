@@ -114,6 +114,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Fonts\pixelfont.TTF" />
+    <None Include="Icons\cat playing button %28végleges%29.webp" />
+    <None Include="Icons\overall food status.avif" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -122,9 +125,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Fonts\" />
-    <Folder Include="Icons\" />
+    <Resource Include="Icons\all pet feed button %28pixelesítve kéne hasonlőt%29.png" />
+    <Resource Include="Icons\all pet feed button v2 %28pixelesítve kéne hasonlőt%29.png" />
+    <Resource Include="Icons\all pet health icon %28elvileg végleges%29.png" />
+    <Resource Include="Icons\all pet rest button v1 %28hasonlő%29.png" />
+    <Resource Include="Icons\bird feed button %28elvileg végleges%29.png" />
+    <Resource Include="Icons\bird fly button %28elvileg végleges%29.jpg" />
+    <Resource Include="Icons\bird singing button %28elvileg végleges%29.png" />
+    <Resource Include="Icons\bird.jpg" />
+    <Resource Include="Icons\cat scratch button v1 %28változhat%29.png" />
+    <Resource Include="Icons\cat.png" />
+    <Resource Include="Icons\dog catch button %28elvileg végleges%29.png" />
+    <Resource Include="Icons\dog feed button %28gagyi de megfelel%29.png" />
+    <Resource Include="Icons\dog walk button v1 %28 még nem végleges%29.jpg" />
+    <Resource Include="Icons\dog.png" />
+    <Resource Include="Icons\overall energy status %28végleges vagy hasonló%29.png" />
+    <Resource Include="Icons\overall icon hunger status %28százalék mellette%29.png" />
+    <Resource Include="Icons\overall info icon %28 végeleges%29.jpg" />
+    <Resource Include="Icons\overall mood status %28elvileg végleges%29.png" />
+    <Resource Include="Icons\rabbit jump button %28valami ilyesmi%29.png" />
+    <Resource Include="Icons\rabbit scratch button v1 %28valami ilyesmit kéne%29.png" />
+    <Resource Include="Icons\rabbit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
