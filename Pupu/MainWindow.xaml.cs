@@ -29,14 +29,7 @@ namespace Pupu
 
 
 
-            Windows = new List<Window>
-           {
-            new Kutya(),
-            new Macska(),
-            new Nyúl(),
-            new Madár()
-
-           };
+            
 
         }
 
