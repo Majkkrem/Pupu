@@ -22,6 +22,17 @@ namespace Pupu
         public Kutya()
         {
             InitializeComponent();
+
+
         }
+
+
+
+
+
+
+
     }
+
+    
 }
