@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="Kutya" Height="450" Width="800">
     <Grid>
+        <Button x:Name="walk_button" Margin="691,194,29,160">
+            <Image Source="/Icons/dog walk button v1 ( még nem végleges).jpg" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Height="165" Width="84" />
+        </Button>
+
+        <Button x:Name="catch_button" Margin="691,315,29,39">
+            <Image Source="/Icons/dog catch button (elvileg végleges).png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Height="103" Width="76" />
+        </Button>
+
+        <Button x:Name="food_button" Margin="29,194,691,160">
+            <Image Source="/Icons/dog feed button (gagyi de megfelel).png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Height="90" Width="117" />
+        </Button>
+
+        <Button x:Name="sleep_button" Margin="29,315,691,39">
+            <Image Source="/Icons/all pet rest button v1 (hasonlő).png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Height="92" Width="125" />
+        </Button>
         
+        <Image Source="/Icons/dog.png" Margin="241,98,241,48" />
+        
+        <Image Source="/Icons/overall energy status (végleges vagy hasonló).png" Margin="105,10,635,368" />
+        
+        <Image Source="/Icons/overall icon hunger status (százalék mellette).png" Margin="206,-38,472,319" />
+
+
+
+
     </Grid>
 </Window>
