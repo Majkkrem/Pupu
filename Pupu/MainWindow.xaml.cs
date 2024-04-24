@@ -37,15 +37,36 @@ namespace Pupu
             new Madár()
 
            };
-       
+
         }
+
+
 
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
             if (PetComboBox.SelectedItem != null)
             {
                 string selectedWindowName = ((ComboBoxItem)PetComboBox.SelectedItem).Content.ToString();
-                Window selectedWindow = Windows.Find(w => w.GetType().Name == selectedWindowName);
+                Window selectedWindow = null;
+
+                switch (selectedWindowName)
+                {
+                    case "Dog":
+                        selectedWindow = new Kutya();
+                        break;
+                    case "Cat":
+                        selectedWindow = new Macska();
+                        break;
+                    case "Bunny":
+                        selectedWindow = new Nyúl();
+                        break;
+                    case "Bird":
+                        selectedWindow = new Madár();
+                        break;
+                    default:
+                        MessageBox.Show("Nem található ablak a választott háziállathoz!");
+                        break;
+                }
 
                 if (selectedWindow != null)
                 {
@@ -54,15 +75,23 @@ namespace Pupu
             }
             else
             {
-                MessageBox.Show("Válassz egy állatot a játék megkezdéséhez");
+                MessageBox.Show("Kérlek válassz egy háziállatot a játékhoz!");
             }
         }
+
 
         public static string selected;
         private void Pet_Selection(object sender, SelectionChangedEventArgs e)
         {
-            selected = (e.AddedItems[0] as ComboBoxItem).Content as string;
 
+            if (e.AddedItems.Count > 0)
+            {
+                ComboBoxItem selectedItem = e.AddedItems[0] as ComboBoxItem;
+                if (selectedItem != null)
+                {
+                    selected = selectedItem.Content.ToString();
+                }
+            }
 
         }
     }
