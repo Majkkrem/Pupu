@@ -6,6 +6,18 @@
         xmlns:local="clr-namespace:Pupu"
         mc:Ignorable="d"
         Title="Madár" Height="450" Width="800">
+    <Window.Resources>
+    <Style TargetType="TextBlock">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
+    </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
+        </Style>
+    </Window.Resources>
     <StackPanel>
         <TextBlock x:Name="txtHealth" Text="Health: 100" Margin="5"/>
         <TextBlock x:Name="txtMood" Text="Mood: 100" Margin="5"/>

@@ -26,15 +26,10 @@ namespace Pupu
         public MainWindow()
         {
             InitializeComponent();
-
-
-
-            
-
         }
 
 
-
+        
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
             if (PetComboBox.SelectedItem != null)
