@@ -49,7 +49,7 @@
         <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="61" Margin="510,7,0,0"/>
 
 
-        <Label x:Name="lbl_hunger" Content="Label" HorizontalAlignment="Left" Margin="191,63,0,0" VerticalAlignment="Top" Height="35" Width="64"/>
+        <Label x:Name="lbl_hunger" Content="Label" HorizontalAlignment="Left" Margin="178,63,0,0" VerticalAlignment="Top" Height="35" Width="83"/>
         <Label x:Name="lbl_energy" Content="Label" HorizontalAlignment="Left" Margin="288,63,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lbl_mood" Content="Label" HorizontalAlignment="Left" Margin="388,63,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lbl_health" Content="Label" HorizontalAlignment="Left" Margin="501,58,0,0" VerticalAlignment="Top"/>
