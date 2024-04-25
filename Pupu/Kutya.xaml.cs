@@ -43,7 +43,7 @@ namespace Pupu
                     if (cts.Token.IsCancellationRequested)
                         break;
 
-                    await Task.Delay(TimeSpan.FromMinutes(3));
+                    await Task.Delay(TimeSpan.FromMinutes(1));
                     health = Math.Max(0, health - 10);
                     if (health == 0)
                     {
@@ -90,7 +90,7 @@ namespace Pupu
                     if (cts.Token.IsCancellationRequested)
                         break;
 
-                    await Task.Delay(TimeSpan.FromMinutes(3));
+                    await Task.Delay(TimeSpan.FromMinutes(2));
                     hunger = Math.Min(100, hunger + 20);
                     if (hunger == 0)
                     {
@@ -116,6 +116,7 @@ namespace Pupu
             health = Math.Min(100, health + 20);
             cts = new CancellationTokenSource();
             Timer();
+            Update();
 
         }
 
@@ -135,14 +136,11 @@ namespace Pupu
 
         private void Update()
         {
-            energy = Math.Max(0, Math.Min(energy, 100));
-            mood = Math.Max(0, Math.Min(mood, 100));
-            hunger = Math.Max(0, Math.Min(hunger, 100));
-            health = Math.Max(0, Math.Min(health, 100));
+
 
             lbl_energy.Content = $"Energy: {energy}";
-            lbl_mood.Content =$"Mood: { mood}";
-            lbl_hunger.Content = $"Hunger: { hunger}";
+            lbl_mood.Content =$"Mood: {mood}";
+            lbl_hunger.Content = $"Hunger: {hunger}";
             lbl_health.Content = $"Health: { health}";
 
         }
