@@ -7,35 +7,37 @@
         mc:Ignorable="d"
         Title="Kutya" Height="450" Width="800">
     <Grid>
-        <Button x:Name="walk_button" Margin="691,194,29,160">
-            <Image Source="/Icons/dog walk button.jpg" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+        <Button x:Name="walk_button" Margin="691,194,29,160" Click="walk_button_Click">
+            <Image Source="/Icons/dog walk button.jpg" HorizontalAlignment="Center"  VerticalAlignment="Center" />
 
         </Button>
 
-        <Button x:Name="catch_button" Margin="691,315,29,39">
-            <Image Source="/Icons/dog catch button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+        <Button x:Name="catch_button" Margin="691,315,29,39" Click="catch_button_Click">
+            <Image Source="/Icons/dog catch button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" />
 
         </Button>
 
-        <Button x:Name="food_button" Margin="29,194,691,160">
-            <Image Source="/Icons/dog, cat, rabbit feed button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="86" Width="112" />
+        <Button x:Name="food_button" Margin="29,194,691,160" Click="food_button_Click">
+            <Image Source="/Icons/dog, cat, rabbit feed button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="86" Width="112" />
 
         </Button>
 
-        <Button x:Name="sleep_button" Margin="29,315,691,39">
-            <Image Source="/Icons/all pet rest button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139"/>
+        <Button x:Name="sleep_button" Margin="29,315,691,39" Click="sleep_button_Click">
+            <Image Source="/Icons/all pet rest button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139"/>
 
         </Button>
 
         <Image Source="/Icons/dog.png" Margin="241,120,241,26" />
-        <Image Source="/Icons/all hunger status icon.png"  Stretch="Uniform" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="127" Margin="104,6,0,0"/>
-        <Image Source="/Icons/all energy status.png"  Stretch="Uniform" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="92" Width="101" Margin="278,-7,0,0"/>
-        <Image Source="/Icons/all mood status.png"  Stretch="Uniform" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="58" Width="59" Margin="436,10,0,0"/>
-        <Image Source="/Icons/all pet health icon.png"  Stretch="Uniform" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="78" Width="88" Margin="569,0,0,0"/>
-        <Label Name="hunger" Content="Label" HorizontalAlignment="Left" Margin="209,28,0,0" VerticalAlignment="Top" Height="35" Width="64"/>
-        <Label Name="energy" Content="Label" HorizontalAlignment="Left" Margin="370,28,0,0" VerticalAlignment="Top"/>
-        <Label Name="mood" Content="Label" HorizontalAlignment="Left" Margin="526,28,0,0" VerticalAlignment="Top"/>
-        <Label Name="health" Content="Label" HorizontalAlignment="Left" Margin="662,28,0,0" VerticalAlignment="Top"/>
+        <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="127" Margin="104,6,0,0"/>
+        <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="92" Width="101" Margin="278,-7,0,0"/>
+        <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="58" Width="59" Margin="436,10,0,0"/>
+        <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="78" Width="88" Margin="569,0,0,0"/>
+        
+        
+        <Label x:Name="lbl_hunger" Content="Label" HorizontalAlignment="Left" Margin="209,28,0,0" VerticalAlignment="Top" Height="35" Width="64"/>
+        <Label x:Name="lbl_energy" Content="Label" HorizontalAlignment="Left" Margin="370,28,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_mood" Content="Label" HorizontalAlignment="Left" Margin="526,28,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_health" Content="Label" HorizontalAlignment="Left" Margin="662,28,0,0" VerticalAlignment="Top"/>
 
 
 
