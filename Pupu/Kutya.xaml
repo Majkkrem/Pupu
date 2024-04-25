@@ -8,26 +8,38 @@
         Title="Kutya" Height="450" Width="800">
     <Grid>
         <Button x:Name="walk_button" Margin="691,194,29,160">
-            <Image Source="/Icons/dog walk button v1 ( még nem végleges).jpg" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Height="165" Width="84" />
+            <Image Source="/Icons/dog walk button.jpg" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+
         </Button>
 
         <Button x:Name="catch_button" Margin="691,315,29,39">
-            <Image Source="/Icons/dog catch button (elvileg végleges).png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Height="103" Width="76" />
+            <Image Source="/Icons/dog catch button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+
         </Button>
 
         <Button x:Name="food_button" Margin="29,194,691,160">
-            <Image Source="/Icons/dog feed button (gagyi de megfelel).png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Height="90" Width="117" />
+            <Image Source="/Icons/dog, cat, rabbit feed button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="86" Width="112" />
+
         </Button>
 
         <Button x:Name="sleep_button" Margin="29,315,691,39">
-            <Image Source="/Icons/all pet rest button v1 (hasonlő).png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Height="92" Width="125" />
+            <Image Source="/Icons/all pet rest button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139"/>
+
         </Button>
-        
-        <Image Source="/Icons/dog.png" Margin="241,98,241,48" />
-        
-        <Image Source="/Icons/overall energy status (végleges vagy hasonló).png" Margin="105,10,635,368" />
-        
-        <Image Source="/Icons/overall icon hunger status (százalék mellette).png" Margin="206,-38,472,319" />
+
+        <Image Source="/Icons/dog.png" Margin="241,120,241,26" />
+        <Image Source="/Icons/all hunger status icon.png"  Stretch="Uniform" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="100" Width="127" Margin="104,6,0,0"/>
+        <Image Source="/Icons/all energy status.png"  Stretch="Uniform" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="92" Width="101" Margin="278,-7,0,0"/>
+        <Image Source="/Icons/all mood status.png"  Stretch="Uniform" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="58" Width="59" Margin="436,10,0,0"/>
+        <Image Source="/Icons/all pet health icon.png"  Stretch="Uniform" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="78" Width="88" Margin="569,0,0,0"/>
+        <Label Name="hunger" Content="Label" HorizontalAlignment="Left" Margin="209,28,0,0" VerticalAlignment="Top" Height="35" Width="64"/>
+        <Label Name="energy" Content="Label" HorizontalAlignment="Left" Margin="370,28,0,0" VerticalAlignment="Top"/>
+        <Label Name="mood" Content="Label" HorizontalAlignment="Left" Margin="526,28,0,0" VerticalAlignment="Top"/>
+        <Label Name="health" Content="Label" HorizontalAlignment="Left" Margin="662,28,0,0" VerticalAlignment="Top"/>
+
+
+
+
 
 
 

@@ -102,8 +102,8 @@ namespace Pupu
                     {
                         hunger += 5;
 
-                    }
                 }
+            }
 
                 ChangeValue();
            
