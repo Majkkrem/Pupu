@@ -104,8 +104,14 @@ namespace Pupu
                 }
             }
 
-            ChangeValue();
-            //sleep_wake_Click();
+                ChangeValue();
+                sleep_wake_Click();
+            }
+        }
+
+        private void sleep_wake_Click()
+        {
+            throw new NotImplementedException();
         }
 
         //TODO: Add sleep button, when clicked it changes to wake up button
