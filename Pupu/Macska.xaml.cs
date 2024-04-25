@@ -27,6 +27,9 @@ namespace Pupu
         private int energy = 100;
         private int hunger = 0;
         private bool sleepStatus = false;
+        private bool playStatus = false;
+        private bool scratchStatus = false;
+
         private DispatcherTimer timer_energy;
         private DispatcherTimer timer_mood;
         private DispatcherTimer timer_hunger;
@@ -59,27 +62,22 @@ namespace Pupu
 
         private void Timer_Tick(object sender, EventArgs e)
         {
+
             if (sender == timer_energy)
             {
                 if (energy == 0)
                 {
-                    MessageBox.Show("Your bunny is exhausted! Press the sleep button to recover energy!");
+                    MessageBox.Show("Your cat is exhausted! Press the sleep button to recover energy!");
                 }
-                else if (sleepStatus == true)
-                {
-                    energy += 5;
-                }
-                else
-                {
-                    energy -= 10;
-                }
-                    
+                energy -= 2;
+                
+
             }
             else if (sender == timer_mood)
             {
                 if (mood == 0)
                 {
-                    MessageBox.Show("Your bunny is moody! Let it sleep or do activities with it to recover mood meter!");
+                    MessageBox.Show("Your cat is moody! Let it sleep or do activities with it to recover mood meter!");
                 }
                 else if (sleepStatus == true)
                 {
@@ -93,26 +91,23 @@ namespace Pupu
             }
             else if (sender == timer_hunger)
             {
-                if (hunger == 0)
+                if (hunger == 100)
                 {
-                    MessageBox.Show("Your bunny is starving! Feed it as soon as possible!");
+                    MessageBox.Show("Your cat is starving! Feed it as soon as possible!");
                 }
                 else
                 {
-                    hunger -= 5;
+                    hunger += 5;
 
                 }
             }
 
-                ChangeValue();
-                sleep_wake_Click();
-            }
+            ChangeValue();
+
+
         }
 
-        private void sleep_wake_Click()
-        {
-            throw new NotImplementedException();
-        }
+
 
         //TODO: Add sleep button, when clicked it changes to wake up button
         // when sleeping, the timer tick adds 10 to the sleep status every 3.5 seconds 
@@ -134,13 +129,72 @@ namespace Pupu
 
         private void sleep_wake_Click(object sender, RoutedEventArgs e)
         {
-            Button sleepbutton = new Button();
-            sleepStatus = true;
-            if (sleepStatus == true)
+            if (sender is Button clickedButton)
             {
-                sleepbutton.Content = "Wake Up";
+                sleepStatus = !sleepStatus;
 
+                clickedButton.Content = sleepStatus ? "Wake Up" : "Sleep";
+
+                if (!sleepStatus)
+                {
+                    mood -= 10;
+                    energy -= 20;
+                    hunger += 30;
+                    ChangeValue();
+                }
             }
+        }
+
+        private void scratch_click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button clickedButton)
+            {
+                scratchStatus = !scratchStatus;
+
+                clickedButton.Content = scratchStatus ? "Stop Scratching" : "Scratch";
+
+                if (!scratchStatus)
+                {
+                    mood += 10;
+                    energy -= 15;
+                    health -= 10;
+                    hunger += 10;
+                    ChangeValue();
+                }
+            }
+        }
+
+        private void play_click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button clickedButton)
+            {
+                playStatus = !playStatus;
+
+                clickedButton.Content = playStatus ? "Stop Playing" : "Play";
+
+                if (!sleepStatus)
+                {
+                    mood += 14;
+                    energy -= 20;
+                    hunger += 16;
+                    ChangeValue();
+                }
+            }
+        }
+
+        private void eat_click(object sender, RoutedEventArgs e)
+        {
+
+
+
+            energy -= 5;
+            mood += 5;
+            hunger -= 20;
+
+
+            ChangeValue();
+
+
         }
     }
 }
