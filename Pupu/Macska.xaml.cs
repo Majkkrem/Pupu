@@ -59,55 +59,53 @@ namespace Pupu
 
         private void Timer_Tick(object sender, EventArgs e)
         {
+            if (sender == timer_energy)
             {
-                if (sender == timer_energy)
+                if (energy == 0)
                 {
-                    if (energy == 0)
-                    {
-                        MessageBox.Show("Your bunny is exhausted! Press the sleep button to recover energy!");
-                    }
-                    else if (sleepStatus == true)
-                    {
-                        energy += 5;
-                    }
-                    else
-                    {
-                        energy -= 10;
-                    }
+                    MessageBox.Show("Your bunny is exhausted! Press the sleep button to recover energy!");
+                }
+                else if (sleepStatus == true)
+                {
+                    energy += 5;
+                }
+                else
+                {
+                    energy -= 10;
+                }
                     
-                }
-                else if (sender == timer_mood)
-                {
-                    if (mood == 0)
-                    {
-                        MessageBox.Show("Your bunny is moody! Let it sleep or do activities with it to recover mood meter!");
-                    }
-                    else if (sleepStatus == true)
-                    {
-                        mood += 15;
-                    }
-                    else
-                    {
-                        mood -= 8;
-
-                    }
-                }
-                else if (sender == timer_hunger)
-                {
-                    if (hunger == 0)
-                    {
-                        MessageBox.Show("Your bunny is starving! Feed it as soon as possible!");
-                    }
-                    else
-                    {
-                        hunger -= 5;
-
-                    }
-                }
-
-                ChangeValue();
-                //sleep_wake_Click();
             }
+            else if (sender == timer_mood)
+            {
+                if (mood == 0)
+                {
+                    MessageBox.Show("Your bunny is moody! Let it sleep or do activities with it to recover mood meter!");
+                }
+                else if (sleepStatus == true)
+                {
+                    mood += 15;
+                }
+                else
+                {
+                    mood -= 8;
+
+                }
+            }
+            else if (sender == timer_hunger)
+            {
+                if (hunger == 0)
+                {
+                    MessageBox.Show("Your bunny is starving! Feed it as soon as possible!");
+                }
+                else
+                {
+                    hunger -= 5;
+
+                }
+            }
+
+            ChangeValue();
+            //sleep_wake_Click();
         }
 
         //TODO: Add sleep button, when clicked it changes to wake up button
