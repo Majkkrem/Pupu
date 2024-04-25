@@ -7,6 +7,54 @@
         mc:Ignorable="d"
         Title="Nyúl" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="scrarch_button" Margin="691,315,29,39" >
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="/Icons/rabbit scratch button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" />
+
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="food_button" Margin="29,194,691,160" >
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="/Icons/dog, cat, rabbit feed button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="86" Width="112" />
+
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="jump_button" Margin="691,194,29,160">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="/Icons/rabbit jump button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="sleep_button" Margin="29,315,691,39">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="/Icons/all pet rest button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image Source="/Icons/rabbit.png" Margin="268,155,268,39"/>
+
+
+        <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="184,10,0,0"/>
+        <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="297,3,0,0"/>
+        <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="407,15,0,0"/>
+        <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="61" Margin="510,7,0,0"/>
+
+
+        <Label x:Name="lbl_hunger" Content="Label" HorizontalAlignment="Left" Margin="191,63,0,0" VerticalAlignment="Top" Height="35" Width="64"/>
+        <Label x:Name="lbl_energy" Content="Label" HorizontalAlignment="Left" Margin="288,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_mood" Content="Label" HorizontalAlignment="Left" Margin="388,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_health" Content="Label" HorizontalAlignment="Left" Margin="501,58,0,0" VerticalAlignment="Top"/>
+
+
+
     </Grid>
 </Window>
