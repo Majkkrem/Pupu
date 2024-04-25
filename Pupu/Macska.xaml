@@ -6,7 +6,27 @@
         xmlns:local="clr-namespace:Pupu"
         mc:Ignorable="d"
         Title="Macska" Height="450" Width="800">
-    <Grid>
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
+        </Style>
         
+    </Window.Resources>
+    <Grid>
+        <Label Content="Health: 100" x:Name="lbl_health" HorizontalAlignment="Left" Margin="70,63,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mood: 100" x:Name="lbl_mood" Margin="250,63,432,0" VerticalAlignment="Top"/>
+        <Label Content="Energy: 100" x:Name="lbl_energy" Margin="420,63,231,0" VerticalAlignment="Top"/>
+        <Label Content="Hunger: 0" x:Name="lbl_hunger" Margin="602,63,70,0" VerticalAlignment="Top"/>
+        <Button Content="Sleep" x:Name="sleep_wake" HorizontalAlignment="Left" Margin="513,310,0,0" VerticalAlignment="Top" Click="sleep_wake_Click"/>
+
+
+
+
     </Grid>
 </Window>
