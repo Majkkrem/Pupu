@@ -131,9 +131,6 @@ namespace Pupu
             energy = Math.Max(0, energy - 20);
             hunger = Math.Min(100, hunger + 10);
             var button = (Button)sender;
-            var border = (Border)button.Template.FindName("border", button);
-            border.BorderThickness = new Thickness(2);
-            border.BorderBrush = Brushes.LightBlue;
             Update();
         }
 
