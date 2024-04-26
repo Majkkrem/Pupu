@@ -14,7 +14,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Image Source="/Icons/bird.jpg" Margin="241,120,241,26" />
+        <Image Source="/Icons/bird.jpg" Margin="176,69,176,0" />
         <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="50,10,0,0"/>
         <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="250,5,0,0"/>
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="460,15,0,0"/>
@@ -53,7 +53,7 @@
             </Button.Style>
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/bird feed button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+                    <Image Source="/Icons/bird feed button.png" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
@@ -73,7 +73,7 @@
             </Button.Style>
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/all pet rest button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+                    <Image Source="/Icons/all pet rest button.png" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
@@ -113,7 +113,7 @@
             </Button.Style>
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/bird fly button.jpg" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+                    <Image Source="/Icons/bird fly button.jpg" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
