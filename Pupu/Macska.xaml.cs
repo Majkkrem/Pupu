@@ -27,12 +27,12 @@ namespace Pupu
         private int energy = 100;
         private int hunger = 0;
         private bool sleepStatus = false;
-        private bool playStatus = false;
         private bool scratchStatus = false;
 
         private DispatcherTimer timer_energy;
         private DispatcherTimer timer_mood;
         private DispatcherTimer timer_hunger;
+        private DispatcherTimer timer_sleep;
 
 
 
@@ -57,11 +57,23 @@ namespace Pupu
             timer_hunger = new DispatcherTimer();
             timer_hunger.Interval = TimeSpan.FromSeconds(6);
             timer_hunger.Tick += Timer_Tick;
+            timer_hunger.Start();
+
+            timer_sleep = new DispatcherTimer();
+            timer_sleep.Interval = TimeSpan.FromSeconds(15);
+            timer_sleep.Tick += Timer_Tick;
+            timer_sleep.Start();
 
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
+            if (!sleepStatus)
+            {
+                mood -= 10;
+                hunger += 15;
+                ChangeValue();
+            }
 
             if (sender == timer_energy)
             {
@@ -69,8 +81,15 @@ namespace Pupu
                 {
                     MessageBox.Show("Your cat is exhausted! Press the sleep button to recover energy!");
                 }
-                energy -= 2;
-                
+                else if (sleepStatus == true)
+                {
+                    energy += 5;
+                }
+                else
+                {
+                    energy -= 2;
+                }
+
 
             }
             else if (sender == timer_mood)
@@ -118,7 +137,7 @@ namespace Pupu
             energy = Math.Max(0, Math.Min(energy, 100));
             mood = Math.Max(0, Math.Min(mood, 100));
             hunger = Math.Max(0, Math.Min(hunger, 100));
-
+            health = Math.Max(0, Math.Min(health, 100));
 
             lbl_health.Content = $"Health: {health}";
             lbl_mood.Content = $"Mood: {mood}";
@@ -129,31 +148,31 @@ namespace Pupu
 
         private void sleep_wake_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button clickedButton)
+
+            sleepStatus = !sleepStatus;  
+            if (sleepStatus)
             {
-                sleepStatus = !sleepStatus;
-
-                clickedButton.Content = sleepStatus ? "Wake Up" : "Sleep";
-
-                if (!sleepStatus)
-                {
-                    mood -= 10;
-                    energy -= 20;
-                    hunger += 30;
-                    ChangeValue();
-                }
+                timer_sleep.Stop();
             }
+            else
+            {
+                energy = 100;
+                timer_sleep.Start();
+            }
+            ChangeValue();
+
         }
 
         private void scratch_click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button clickedButton)
+            if (!sleepStatus)
             {
-                scratchStatus = !scratchStatus;
+                energy -= 5;
+                mood += 25;
+                ChangeValue();
+            }
 
-                clickedButton.Content = scratchStatus ? "Stop Scratching" : "Scratch";
-
-                if (!scratchStatus)
+            if (!scratchStatus)
                 {
                     mood += 10;
                     energy -= 15;
@@ -161,16 +180,12 @@ namespace Pupu
                     hunger += 10;
                     ChangeValue();
                 }
-            }
+            
         }
 
         private void play_click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button clickedButton)
-            {
-                playStatus = !playStatus;
-
-                clickedButton.Content = playStatus ? "Stop Playing" : "Play";
+             
 
                 if (!sleepStatus)
                 {
@@ -179,20 +194,20 @@ namespace Pupu
                     hunger += 16;
                     ChangeValue();
                 }
-            }
+            
         }
 
         private void eat_click(object sender, RoutedEventArgs e)
         {
 
-
-
+            if (!sleepStatus)
+            {
             energy -= 5;
             mood += 5;
             hunger -= 20;
-
-
             ChangeValue();
+            }
+
 
 
         }

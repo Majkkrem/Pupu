@@ -12,50 +12,53 @@
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
         </Style>
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
-        </Style>
+        
 
     </Window.Resources>
-    <Grid Margin="7,0,-7,0">
+    <Grid >
+
+        <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="105,16,0,0"/>
+        <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="274,3,0,0"/>
+        <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>
+        <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="62" Margin="632,8,0,0"/>
+
         <Label Content="Health: 100" x:Name="lbl_health" HorizontalAlignment="Left" Margin="70,63,0,0" VerticalAlignment="Top"/>
         <Label Content="Mood: 100" x:Name="lbl_mood" Margin="250,63,414,0" VerticalAlignment="Top"/>
         <Label Content="Energy: 100" x:Name="lbl_energy" Margin="420,63,216,0" VerticalAlignment="Top"/>
-        <Label Content="Hunger: 0" x:Name="lbl_hunger" Margin="602,63,54,0" VerticalAlignment="Top"/>
-        <Button  x:Name="sleep_wake" Margin="688,310,54,0" VerticalAlignment="Top" Click="sleep_wake_Click">
+        <Label Content="Hunger: 0" x:Name="lbl_hunger" Margin="602,63,33,0" VerticalAlignment="Top"/>
+        <Button  x:Name="sleep_wake" Margin="29,315,691,39"  Click="sleep_wake_Click">
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/all pet rest button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="62" Width="58"  />
+                    <Image Source="/Icons/all pet rest button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnPlay" Margin="43,310,691,0" VerticalAlignment="Top" Click="play_click" Height="62">
+        <Button x:Name="btnPlay" Margin="691,194,29,160"  Click="play_click" >
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/cat playing button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center"  />
+                    <Image Source="/Icons/cat playing button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center"  />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button  x:Name="btnScratch" HorizontalAlignment="Left" Margin="47,0,0,0" VerticalAlignment="Center" Click="scratch_click"  >
+        <Button  x:Name="btnScratch"  Margin="691,315,29,39"  Click="scratch_click"  >
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/cat scratch button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="62" Width="58"  />
+                    <Image Source="/Icons/cat scratch button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" />
                 </ControlTemplate>
             </Button.Template>
 
         </Button>
-        <Button  x:Name="btneat" Margin="686,0,54,0" VerticalAlignment="Center" Click="eat_click"  >
+        <Button  x:Name="btneat" Margin="29,194,691,160"  Click="eat_click"  >
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/dog, cat, rabbit feed button.png" Stretch="Uniform" Height="62" Width="58"   />
+                    <Image Source="/Icons/dog, cat, rabbit feed button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="86" Width="112" />
 
                 </ControlTemplate>
 
             </Button.Template>
         </Button>
 
-        <Image Source="/Icons/cat.png" Stretch="Uniform" Height="200" Margin="275,186,275,48" />
+        <Image Source="/Icons/cat.png" Stretch="Uniform" Margin="235,150,235,33" />
 
 
 
