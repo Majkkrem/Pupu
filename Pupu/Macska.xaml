@@ -27,9 +27,7 @@
         <Label Content="Mood: 100" x:Name="lbl_mood" Margin="420,63,203,0" VerticalAlignment="Top"/>
         <Label Content="Health: 0" x:Name="lbl_health" Margin="602,63,33,0" VerticalAlignment="Top"/>
         <Button  x:Name="sleep_wake" Margin="29,315,691,39"  Click="sleep_wake_Click">
-            <Button.BitmapEffect>
-                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
-            </Button.BitmapEffect>
+            
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
@@ -51,9 +49,7 @@
             
         </Button>
         <Button x:Name="btnPlay" Margin="691,194,29,160"  Click="play_click" >
-            <Button.BitmapEffect>
-                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
-            </Button.BitmapEffect>
+            
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
@@ -74,9 +70,7 @@
             </Button.Template>
         </Button>
         <Button  x:Name="btnScratch"  Margin="691,315,29,39"  Click="scratch_click"  >
-            <Button.BitmapEffect>
-                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
-            </Button.BitmapEffect>
+   
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
@@ -98,9 +92,7 @@
 
         </Button>
         <Button  x:Name="btneat" Margin="29,194,691,160"  Click="eat_click"  >
-            <Button.BitmapEffect>
-                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
-            </Button.BitmapEffect>
+            
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>

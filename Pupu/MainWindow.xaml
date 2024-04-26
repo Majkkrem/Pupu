@@ -43,19 +43,7 @@
             <ComboBoxItem>Bird</ComboBoxItem>
         </ComboBox>
         <Button x:Name="StartGame" Content="Start" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,369,0,0" Height="25" Width="164" Click="StartGame_Click">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Style.Triggers>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Effect">
-                                <Setter.Value>
-                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
+           
             <Button.BitmapEffect>
                 <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
             </Button.BitmapEffect>
