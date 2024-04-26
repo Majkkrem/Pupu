@@ -12,7 +12,7 @@
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
         </Style>
-        
+
 
     </Window.Resources>
     <Grid >
@@ -22,10 +22,10 @@
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>
         <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="62" Margin="632,8,0,0"/>
 
-        <Label Content="Health: 100" x:Name="lbl_health" HorizontalAlignment="Left" Margin="70,63,0,0" VerticalAlignment="Top"/>
-        <Label Content="Mood: 100" x:Name="lbl_mood" Margin="250,63,414,0" VerticalAlignment="Top"/>
-        <Label Content="Energy: 100" x:Name="lbl_energy" Margin="420,63,216,0" VerticalAlignment="Top"/>
-        <Label Content="Hunger: 0" x:Name="lbl_hunger" Margin="602,63,33,0" VerticalAlignment="Top"/>
+        <Label Content="Hunger: 100" x:Name="lbl_hunger" HorizontalAlignment="Left" Margin="69,63,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Energy: 100" x:Name="lbl_energy" Margin="250,63,385,0" VerticalAlignment="Top"/>
+        <Label Content="Mood: 100" x:Name="lbl_mood" Margin="420,63,203,0" VerticalAlignment="Top"/>
+        <Label Content="Health: 0" x:Name="lbl_health" Margin="602,63,33,0" VerticalAlignment="Top"/>
         <Button  x:Name="sleep_wake" Margin="29,315,691,39"  Click="sleep_wake_Click">
             <Button.Template>
                 <ControlTemplate>
@@ -43,7 +43,7 @@
         <Button  x:Name="btnScratch"  Margin="691,315,29,39"  Click="scratch_click"  >
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/cat scratch button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+                    <Image Source="/Icons/cat scratch button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" />
                 </ControlTemplate>
             </Button.Template>
 
