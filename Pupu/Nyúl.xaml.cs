@@ -130,7 +130,6 @@ namespace Pupu
             mood = Math.Min(100, mood + 20);
             energy = Math.Max(0, energy - 20);
             hunger = Math.Min(100, hunger + 10);
-            var button = (Button)sender;
             Update();
         }
 
