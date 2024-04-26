@@ -16,16 +16,32 @@
 
     </Window.Resources>
     <Grid >
-
+    
         <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="105,16,0,0"/>
         <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="274,3,0,0"/>
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>
         <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="62" Margin="632,8,0,0"/>
 
-        <Label Content="Hunger: 100" x:Name="lbl_hunger" HorizontalAlignment="Left" Margin="69,63,0,0" VerticalAlignment="Top" Width="165"/>
-        <Label Content="Energy: 100" x:Name="lbl_energy" Margin="250,63,385,0" VerticalAlignment="Top"/>
-        <Label Content="Mood: 100" x:Name="lbl_mood" Margin="420,63,203,0" VerticalAlignment="Top"/>
-        <Label Content="Health: 0" x:Name="lbl_health" Margin="602,63,33,0" VerticalAlignment="Top"/>
+        <Label Content="Hunger: 100" x:Name="lbl_hunger" HorizontalAlignment="Left" Margin="69,63,0,0" VerticalAlignment="Top" Width="165">
+            <Label.BitmapEffect>
+                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
+            </Label.BitmapEffect>
+        </Label>
+        <Label Content="Energy: 100" x:Name="lbl_energy" Margin="250,63,385,0" VerticalAlignment="Top">
+            <Label.BitmapEffect>
+                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
+            </Label.BitmapEffect>
+        </Label>
+        <Label Content="Mood: 100" x:Name="lbl_mood" Margin="420,63,203,0" VerticalAlignment="Top">
+            <Label.BitmapEffect>
+                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
+            </Label.BitmapEffect>
+        </Label>
+        <Label Content="Health: 0" x:Name="lbl_health" Margin="602,63,33,0" VerticalAlignment="Top">
+            <Label.BitmapEffect>
+                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
+            </Label.BitmapEffect>
+        </Label>
         <Button  x:Name="sleep_wake" Margin="29,315,691,39"  Click="sleep_wake_Click">
             
             <Button.Style>
@@ -43,7 +59,7 @@
             </Button.Style>
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/all pet rest button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139" />
+                    <Image Source="/Icons/all pet rest button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139"/>
                 </ControlTemplate>
             </Button.Template>
             
@@ -130,10 +146,5 @@
             </Button.Style>
         </Button>
         <Image Source="/Icons/cat.png" Stretch="Uniform" Margin="235,150,235,33" />
-
-
-
-
-
     </Grid>
 </Window>
