@@ -10,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -25,7 +26,6 @@ namespace Pupu
             InitializeComponent();
             Timer();
             Update();
-            
         }
 
 
@@ -144,19 +144,10 @@ namespace Pupu
 
         private void Update()
         {
-
-
             lbl_energy.Content = $"Energy: {energy}";
             lbl_mood.Content =$"Mood: {mood}";
             lbl_hunger.Content = $"Hunger: {hunger}";
             lbl_health.Content = $"Health: { health}";
-
         }
-
-
-
-
     }
-
-    
 }
