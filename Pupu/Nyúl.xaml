@@ -15,6 +15,19 @@
     </Window.Resources>
     <Grid>
         <Button x:Name="scrarch_button" Margin="691,315,29,39" Click="scrarch_button_Click" >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/rabbit scratch button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" />
@@ -23,6 +36,19 @@
         </Button>
 
         <Button x:Name="food_button" Margin="29,194,691,160" Click="food_button_Click_1" >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/dog, cat, rabbit feed button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="86" Width="112" />
@@ -31,6 +57,19 @@
         </Button>
 
         <Button x:Name="jump_button" Margin="691,194,29,160" Click="jump_button_Click_1" >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/rabbit jump button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" Height="80" Width="116"/>
@@ -39,13 +78,40 @@
         </Button>
 
         <Button x:Name="sleep_button" Margin="29,315,691,39" Click="sleep_button_Click_1">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/all pet rest button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="Exit" Content="X" Background="Red" FontSize="30" Margin="500,355,160,0" VerticalAlignment="Top" Height="55" Width="55" Click="Exit_Click"/>
+        <Button x:Name="Exit" Content="X" Background="Red" FontSize="30" Margin="500,355,160,0" VerticalAlignment="Top" Height="55" Width="55" Click="Exit_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
 
         <Image Source="/Icons/rabbit.png" Margin="268,155,268,39"/>
 
