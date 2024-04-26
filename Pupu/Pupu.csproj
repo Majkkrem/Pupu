@@ -145,5 +145,17 @@
     <Resource Include="Icons\rabbit scratch button.png" />
     <Resource Include="Icons\rabbit.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\bird-removebg.png" />
+    <Resource Include="Icons\cat-removebg.png" />
+    <Resource Include="Icons\cloud_1-removebg.png" />
+    <Resource Include="Icons\cloud_2-removebg.png" />
+    <Resource Include="Icons\cloud_3-removebg.png" />
+    <Resource Include="Icons\dog-removebg.png" />
+    <Resource Include="Icons\grass.png" />
+    <Resource Include="Icons\green-bush-removebg.png" />
+    <Resource Include="Icons\rabbit-removebg.png" />
+    <Resource Include="Icons\tree-removebg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
