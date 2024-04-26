@@ -75,7 +75,7 @@ namespace Pupu
                 }
                 else if (isSleeping == true)
                 {
-                    energy += 5;
+                    energy += 20;
                 }
                 else
                 {
@@ -156,7 +156,6 @@ namespace Pupu
             }
             else
             {
-                energy = 100;
                 timer.Start();
             }
             UpdateUI();
