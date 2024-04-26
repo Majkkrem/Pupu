@@ -212,9 +212,11 @@ namespace Pupu
             hunger -= 20;
             ChangeValue();
             }
+        }
 
-
-
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -110,6 +110,7 @@
 
             </Button.Template>
         </Button>
+        <Button x:Name="Exit" Content="X" Background="Red" FontSize="30" Margin="500,355,160,0" VerticalAlignment="Top" Height="55" Width="55" Click="Exit_Click"/>
 
         <Image Source="/Icons/cat.png" Stretch="Uniform" Margin="235,150,235,33" />
 

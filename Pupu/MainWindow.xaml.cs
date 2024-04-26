@@ -59,7 +59,6 @@ namespace Pupu
                 if (selectedWindow != null)
                 {
                     selectedWindow.Show();
-                    this.Hide();
                 }
             }
             else

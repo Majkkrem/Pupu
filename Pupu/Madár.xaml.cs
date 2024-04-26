@@ -173,5 +173,10 @@ namespace Pupu
             txtEnergy.Text = $"Energy: {energy}";
             txtHunger.Text = $"Hunger: {hunger}";
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
