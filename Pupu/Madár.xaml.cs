@@ -55,6 +55,7 @@ namespace Pupu
             timer_hunger = new DispatcherTimer();
             timer_hunger.Interval = TimeSpan.FromSeconds(15);
             timer_hunger.Tick += Timer_Tick;
+            timer_hunger.Start();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -74,7 +75,7 @@ namespace Pupu
                 }
                 else if (isSleeping == true)
                 {
-                    energy += 5;
+                    energy += 20;
                 }
                 else
                 {
@@ -124,17 +125,6 @@ namespace Pupu
             }
         }
 
-        private void btnPlay_Click(object sender, RoutedEventArgs e)
-        {
-            if (!isSleeping)
-            {
-                energy -= 10;
-                mood += 20;
-                health -= 15;
-                UpdateUI();
-            }
-        }
-
         private void btnSing_Click(object sender, RoutedEventArgs e)
         {
             if (!isSleeping)
@@ -151,6 +141,7 @@ namespace Pupu
             {
                 energy -= 10;
                 mood += 30;
+                health -= 5;
                 UpdateUI();
             }
         }
@@ -165,7 +156,6 @@ namespace Pupu
             }
             else
             {
-                energy = 100;
                 timer.Start();
             }
             UpdateUI();
@@ -182,6 +172,11 @@ namespace Pupu
             txtMood.Text = $"Mood: {mood}";
             txtEnergy.Text = $"Energy: {energy}";
             txtHunger.Text = $"Hunger: {hunger}";
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -12,7 +12,7 @@
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
         </Style>
-        
+
 
     </Window.Resources>
     <Grid >
@@ -22,18 +22,45 @@
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>
         <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="62" Margin="632,8,0,0"/>
 
-        <Label Content="Health: 100" x:Name="lbl_health" HorizontalAlignment="Left" Margin="70,63,0,0" VerticalAlignment="Top"/>
-        <Label Content="Mood: 100" x:Name="lbl_mood" Margin="250,63,414,0" VerticalAlignment="Top"/>
-        <Label Content="Energy: 100" x:Name="lbl_energy" Margin="420,63,216,0" VerticalAlignment="Top"/>
-        <Label Content="Hunger: 0" x:Name="lbl_hunger" Margin="602,63,33,0" VerticalAlignment="Top"/>
+        <Label Content="Hunger: 100" x:Name="lbl_hunger" HorizontalAlignment="Left" Margin="69,63,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Energy: 100" x:Name="lbl_energy" Margin="250,63,385,0" VerticalAlignment="Top"/>
+        <Label Content="Mood: 100" x:Name="lbl_mood" Margin="420,63,203,0" VerticalAlignment="Top"/>
+        <Label Content="Health: 0" x:Name="lbl_health" Margin="602,63,33,0" VerticalAlignment="Top"/>
         <Button  x:Name="sleep_wake" Margin="29,315,691,39"  Click="sleep_wake_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/all pet rest button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139" />
                 </ControlTemplate>
             </Button.Template>
+            
         </Button>
         <Button x:Name="btnPlay" Margin="691,194,29,160"  Click="play_click" >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/cat playing button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center"  />
@@ -41,14 +68,40 @@
             </Button.Template>
         </Button>
         <Button  x:Name="btnScratch"  Margin="691,315,29,39"  Click="scratch_click"  >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/cat scratch button.png" Stretch="Uniform" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+                    <Image Source="/Icons/cat scratch button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" />
                 </ControlTemplate>
             </Button.Template>
 
         </Button>
         <Button  x:Name="btneat" Margin="29,194,691,160"  Click="eat_click"  >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="DarkBlue"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/dog, cat, rabbit feed button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="86" Width="112" />
@@ -57,6 +110,7 @@
 
             </Button.Template>
         </Button>
+        <Button x:Name="Exit" Content="X" Background="Red" FontSize="30" Margin="500,355,160,0" VerticalAlignment="Top" Height="55" Width="55" Click="Exit_Click"/>
 
         <Image Source="/Icons/cat.png" Stretch="Uniform" Margin="235,150,235,33" />
 

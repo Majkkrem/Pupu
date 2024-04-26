@@ -45,22 +45,22 @@ namespace Pupu
         private void InitializeTimer()
         {
             timer_energy = new DispatcherTimer();
-            timer_energy.Interval = TimeSpan.FromSeconds(3);
+            timer_energy.Interval = TimeSpan.FromSeconds(5);
             timer_energy.Tick += Timer_Tick;
             timer_energy.Start();
 
             timer_mood = new DispatcherTimer();
-            timer_mood.Interval = TimeSpan.FromSeconds(8);
+            timer_mood.Interval = TimeSpan.FromSeconds(18);
             timer_mood.Tick += Timer_Tick;
             timer_mood.Start();
 
             timer_hunger = new DispatcherTimer();
-            timer_hunger.Interval = TimeSpan.FromSeconds(6);
+            timer_hunger.Interval = TimeSpan.FromSeconds(16);
             timer_hunger.Tick += Timer_Tick;
             timer_hunger.Start();
 
             timer_sleep = new DispatcherTimer();
-            timer_sleep.Interval = TimeSpan.FromSeconds(15);
+            timer_sleep.Interval = TimeSpan.FromSeconds(25);
             timer_sleep.Tick += Timer_Tick;
             timer_sleep.Start();
 
@@ -97,6 +97,7 @@ namespace Pupu
                 if (mood == 0)
                 {
                     MessageBox.Show("Your cat is moody! Let it sleep or do activities with it to recover mood meter!");
+                    
                 }
                 else if (sleepStatus == true)
                 {
@@ -148,20 +149,24 @@ namespace Pupu
 
         private void sleep_wake_Click(object sender, RoutedEventArgs e)
         {
+            
+                sleepStatus = !sleepStatus;
 
-            sleepStatus = !sleepStatus;  
-            if (sleepStatus)
-            {
-                timer_sleep.Stop();
-            }
-            else
-            {
-                energy = 100;
-                timer_sleep.Start();
-            }
-            ChangeValue();
+                if (sleepStatus)
+                {
+                    timer_sleep.Stop();
+                }
+                else
+                {
+                    timer_sleep.Start();
+                }
 
+                ChangeValue() ;
+
+                
+            
         }
+
 
         private void scratch_click(object sender, RoutedEventArgs e)
         {
@@ -207,9 +212,11 @@ namespace Pupu
             hunger -= 20;
             ChangeValue();
             }
+        }
 
-
-
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -149,5 +149,14 @@ namespace Pupu
             lbl_hunger.Content = $"Hunger: {hunger}";
             lbl_health.Content = $"Health: { health}";
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+
+
+
     }
 }
