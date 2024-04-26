@@ -6,34 +6,39 @@
         xmlns:local="clr-namespace:Pupu"
         mc:Ignorable="d"
         Title="Nyúl" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <Button x:Name="scrarch_button" Margin="691,315,29,39" >
+        <Button x:Name="scrarch_button" Margin="691,315,29,39" Click="scrarch_button_Click" >
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/rabbit scratch button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" />
-
                 </ControlTemplate>
             </Button.Template>
         </Button>
 
-        <Button x:Name="food_button" Margin="29,194,691,160" >
+        <Button x:Name="food_button" Margin="29,194,691,160" Click="food_button_Click_1" >
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/dog, cat, rabbit feed button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="86" Width="112" />
-
                 </ControlTemplate>
             </Button.Template>
         </Button>
 
-        <Button x:Name="jump_button" Margin="691,194,29,160">
+        <Button x:Name="jump_button" Margin="691,194,29,160" Click="jump_button_Click_1" >
             <Button.Template>
                 <ControlTemplate>
-                    <Image Source="/Icons/rabbit jump button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+                    <Image Source="/Icons/rabbit jump button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" Height="80" Width="116"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
 
-        <Button x:Name="sleep_button" Margin="29,315,691,39">
+        <Button x:Name="sleep_button" Margin="29,315,691,39" Click="sleep_button_Click_1">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/Icons/all pet rest button.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="117" Width="139" />
@@ -45,18 +50,15 @@
         <Image Source="/Icons/rabbit.png" Margin="268,155,268,39"/>
 
 
-        <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="184,10,0,0"/>
-        <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="297,3,0,0"/>
-        <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="407,15,0,0"/>
-        <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="61" Margin="510,7,0,0"/>
+        <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="105,16,0,0"/>
+        <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="274,3,0,0"/>
+        <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>
+        <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top"  Height="52" Width="62" Margin="632,8,0,0"/>
 
 
-        <Label x:Name="lbl_hunger" Content="Label" HorizontalAlignment="Left" Margin="178,63,0,0" VerticalAlignment="Top" Height="35" Width="83"/>
-        <Label x:Name="lbl_energy" Content="Label" HorizontalAlignment="Left" Margin="288,63,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lbl_mood" Content="Label" HorizontalAlignment="Left" Margin="388,63,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lbl_health" Content="Label" HorizontalAlignment="Left" Margin="501,58,0,0" VerticalAlignment="Top"/>
-
-
-
+        <Label x:Name="lbl_hunger" Content="Label" HorizontalAlignment="Left" Margin="70,63,0,0" VerticalAlignment="Top" Height="35" Width="154"/>
+        <Label x:Name="lbl_energy" Content="Label" HorizontalAlignment="Left" Margin="250,63,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="lbl_mood" Content="Label" HorizontalAlignment="Left"  Margin="420,63,0,0" VerticalAlignment="Top" Width="159"/>
+        <Label x:Name="lbl_health" Content="Label" HorizontalAlignment="Left" Margin="602,63,0,0" VerticalAlignment="Top" Width="169"/>
     </Grid>
 </Window>
