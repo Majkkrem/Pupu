@@ -4,7 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Pupu the game" Height="450" Width="800">
     <Window.Resources>
 
 
@@ -290,7 +290,7 @@
             <Image Source="/Icons/pink-flower.png" Height="100" Canvas.Left="657" Canvas.Top="366" Width="90" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Image Source="/Icons/pink-flower.png" Height="100" Canvas.Left="700" Canvas.Top="371" Width="90" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Image Source="/Icons/white-flower.png" Height="28" Canvas.Left="707" Canvas.Top="382" Width="28" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Image Source="/Icons/rabbit-removebg.png" Height="80" Canvas.Left="203" Canvas.Top="320" Width="58" RenderTransformOrigin="-0.39,1.225" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image Source="/Icons/rabbit-removebg.png" Height="80" Canvas.Left="224" Canvas.Top="311" Width="58" RenderTransformOrigin="-0.39,1.225" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Image Source="/Icons/dog-removebg.png" Height="61" Canvas.Left="531" Canvas.Top="329" Width="54" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Image Source="/Icons/cat-removebg.png" Height="59" Canvas.Left="114" Canvas.Top="348" Width="54" RenderTransformOrigin="-0.599,0.374"/>
             <Image Source="/Icons/bird-removebg.png" Height="90" Canvas.Left="673" Canvas.Top="259" Width="90"/>
@@ -342,6 +342,17 @@
                         <SkewTransform AngleX="25.259" AngleY="-46.504"/>
                         <RotateTransform Angle="-493.73"/>
                         <TranslateTransform X="10.16" Y="-13.228"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/white-flower.png" Height="28" Canvas.Left="52" Canvas.Top="382" Width="28" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Image Source="/Icons/flower.png" Height="27" Canvas.Left="132" Canvas.Top="403" Width="34" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.688"/>
+                        <SkewTransform AngleX="25.259" AngleY="-43.891"/>
+                        <RotateTransform Angle="-302.651"/>
+                        <TranslateTransform X="7.413" Y="-13.152"/>
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>

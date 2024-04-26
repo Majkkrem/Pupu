@@ -5,17 +5,354 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pupu"
         mc:Ignorable="d"
-        Title="Kutya" Height="450" Width="800">
+        Title="Pupu the game" Height="450" Width="800">
     <Window.Resources>
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
         </Style>
-
-
     </Window.Resources>
-    <Grid >
+
+    <Grid Background="SkyBlue" >
+        <Canvas>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="16" Canvas.Top="352" Width="100" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="119" Canvas.Top="352" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="223" Canvas.Top="353" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="327" Canvas.Top="352" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="429" Canvas.Top="350" Width="101" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="530" Canvas.Top="348" Width="101" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="635" Canvas.Top="349" Width="101" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="730" Canvas.Top="346" Width="101" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="803" Canvas.Top="373" Width="101" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="70" Canvas.Top="261" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="158" Canvas.Top="261" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="260" Canvas.Top="260" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="360" Canvas.Top="262" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="468" Canvas.Top="261" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="468" Canvas.Top="261" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="568" Canvas.Top="261" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="672" Canvas.Top="261" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="765" Canvas.Top="261" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="-33" Canvas.Top="264" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="216" Canvas.Top="177" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="113" Canvas.Top="178" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="9" Canvas.Top="178" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="318" Canvas.Top="171" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="490" Canvas.Top="177" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="589" Canvas.Top="177" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="687" Canvas.Top="176" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="113" Canvas.Left="780" Canvas.Top="175" Width="102" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/grass.png" Height="104" Canvas.Left="413" Canvas.Top="178" Width="100" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.739"/>
+                        <SkewTransform AngleY="17.418" AngleX="-48.434"/>
+                        <RotateTransform Angle="-17.897"/>
+                        <TranslateTransform Y="-2.824" X="-39.531"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/pink-flower.png" Height="256" Canvas.Left="431" Canvas.Top="208" Width="313"/>
+            <Image Source="/Icons/pink-flower.png" Height="235" Canvas.Left="10" Canvas.Top="254" Width="293" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image Source="/Icons/pink-flower.png" Height="228" Canvas.Top="306" Width="287" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image Source="/Icons/flower.png" Height="81" Canvas.Left="207" Canvas.Top="402" Width="78" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.079"/>
+                        <SkewTransform AngleX="27.784" AngleY="7.924"/>
+                        <RotateTransform Angle="137.506"/>
+                        <TranslateTransform X="8.782" Y="-21.557"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/tree-removebg.png" Height="591" Canvas.Left="463" Width="471" Canvas.Top="-290" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image Source="/Icons/flower.png" Height="75" Canvas.Left="610" Canvas.Top="286" Width="81" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.079"/>
+                        <SkewTransform AngleX="27.784" AngleY="7.924"/>
+                        <RotateTransform Angle="146.551"/>
+                        <TranslateTransform X="8.782" Y="-21.557"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/flower.png" Height="74" Canvas.Left="626" Canvas.Top="342" Width="81" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.079"/>
+                        <SkewTransform AngleX="27.784" AngleY="7.924"/>
+                        <RotateTransform Angle="146.551"/>
+                        <TranslateTransform X="8.782" Y="-21.557"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/flower.png" Height="74" Canvas.Left="592" Canvas.Top="396" Width="82" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.079" ScaleY="0.899"/>
+                        <SkewTransform AngleX="-12.336" AngleY="7.924"/>
+                        <RotateTransform Angle="174.307"/>
+                        <TranslateTransform X="-16.906" Y="-29.966"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/flower.png" Height="74" Canvas.Left="624" Canvas.Top="383" Width="81" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.008"/>
+                        <SkewTransform AngleX="27.784" AngleY="0.832"/>
+                        <RotateTransform Angle="140.543"/>
+                        <TranslateTransform X="14.836" Y="-20.197"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Icons/tree-removebg.png" Height="475" Canvas.Left="664" Width="312" Canvas.Top="44" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </Canvas>
+
         <Button x:Name="walk_button" Margin="691,194,29,160" Click="walk_button_Click">
             <Button.Style>
                 <Style TargetType="Button">
@@ -56,7 +393,6 @@
                     <Image Source="/Icons/dog catch button.png"  HorizontalAlignment="Center"  VerticalAlignment="Center" />
                 </ControlTemplate>
             </Button.Template>
-
         </Button>
 
         <Button x:Name="food_button" Margin="29,194,691,160" Click="food_button_Click">
@@ -115,7 +451,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Image Source="/Icons/dog.png" Margin="241,120,241,26" />
+        <Image Source="/Icons/dog-removebg.png" Margin="241,120,241,26" />
         <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="105,16,0,0"/>
         <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="274,3,0,0"/>
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>
