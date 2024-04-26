@@ -157,5 +157,10 @@
     <Resource Include="Icons\rabbit-removebg.png" />
     <Resource Include="Icons\tree-removebg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\flower.png" />
+    <Resource Include="Icons\pink-flower.png" />
+    <Resource Include="Icons\white-flower.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
