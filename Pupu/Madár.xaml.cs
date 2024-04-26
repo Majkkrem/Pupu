@@ -55,6 +55,7 @@ namespace Pupu
             timer_hunger = new DispatcherTimer();
             timer_hunger.Interval = TimeSpan.FromSeconds(15);
             timer_hunger.Tick += Timer_Tick;
+            timer_hunger.Start();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -124,17 +125,6 @@ namespace Pupu
             }
         }
 
-        private void btnPlay_Click(object sender, RoutedEventArgs e)
-        {
-            if (!isSleeping)
-            {
-                energy -= 10;
-                mood += 20;
-                health -= 15;
-                UpdateUI();
-            }
-        }
-
         private void btnSing_Click(object sender, RoutedEventArgs e)
         {
             if (!isSleeping)
@@ -151,6 +141,7 @@ namespace Pupu
             {
                 energy -= 10;
                 mood += 30;
+                health -= 5;
                 UpdateUI();
             }
         }
