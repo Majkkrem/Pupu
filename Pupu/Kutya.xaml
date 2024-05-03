@@ -452,8 +452,8 @@
             </Button.Style>
         </Button>
         <Image Source="/Icons/dog-removebg.png" Margin="241,120,241,26" />
-        <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="105,16,0,0"/>
-        <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="274,3,0,0"/>
+        <Image Source="/Icons/hunger-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="83" Width="100" Margin="94,10,0,0"/>
+        <Image Source="/Icons/energy-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="75" Width="86" Margin="261,3,0,0"/>
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>
         <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="62" Margin="632,8,0,0"/>
 
