@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -155,6 +156,33 @@ namespace Pupu
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+        }
+
+
+        private void dogSoundClick(object sender, MouseEventArgs e)
+        {
+            Random random = new Random();
+            int randomSound = random.Next(1, 3);
+
+            SoundPlayer dog1 = new SoundPlayer(Properties.Resources.dogBark1);
+            SoundPlayer dog2 = new SoundPlayer(Properties.Resources.dogPanting);
+            SoundPlayer dog3 = new SoundPlayer(Properties.Resources.dogSound2);
+
+            if (randomSound == 1)
+            {
+                dog1.Load();
+                dog1.Play();
+            }
+            else if (randomSound == 2)
+            {
+                dog2.Load();
+                dog2.Play();
+            }
+            else
+            {
+                dog3.Load();
+                dog3.Play();
+            }
         }
 
 

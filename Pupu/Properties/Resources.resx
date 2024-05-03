@@ -118,7 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Kainbeats___Lonely_views_in_the_park__Ft__Refeeld_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Sound\Kainbeats - Lonely views in the park (Ft. Refeeld).mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="bgmusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgmusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="birdChirp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\birdChirp.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="birdFly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\birdFly.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="birdSounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\birdSounds.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="catMeow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catMeow1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="catMeow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catMeow2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="catMeow3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catMeow3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dogBark1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dogBark1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dogPanting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dogPanting.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dogPlaySound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dogPlaySound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dogSound2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dogSound2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

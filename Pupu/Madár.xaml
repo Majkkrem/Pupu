@@ -21,7 +21,7 @@
             <Image Source="/Icons/tree-removebg.png" Height="540" Canvas.Left="450" Width="405" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="82"/>
 
         </Canvas>
-        <Image Source="/Icons/bird-removebg.png" Margin="176,69,176,0" />
+        <Image Source="/Icons/bird-removebg.png" Margin="176,69,176,0" MouseLeftButtonDown="birdSoundClick"/>
         <Image Source="/Icons/hunger-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="68" Width="95" Margin="38,3,0,0"/>
         <Image Source="/Icons/energy-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="78" Width="96" Margin="246,-6,0,0"/>
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="460,15,0,0"/>

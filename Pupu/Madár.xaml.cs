@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -183,6 +184,33 @@ namespace Pupu
             timer_health.Stop();
             timer_hunger.Stop();
             timer_mood.Stop();
+        }
+
+
+        private void birdSoundClick(object sender, MouseEventArgs e)
+        {
+            Random random = new Random();
+            int randomSound = random.Next(1, 3);
+
+            SoundPlayer bird1 = new SoundPlayer(Properties.Resources.birdSounds);
+            SoundPlayer bird2 = new SoundPlayer(Properties.Resources.birdChirp);
+            SoundPlayer bird3 = new SoundPlayer(Properties.Resources.birdFly);
+
+            if (randomSound == 1)
+            {
+                bird1.Load();
+                bird1.Play();
+            }
+            else if (randomSound == 2)
+            {
+                bird2.Load();
+                bird2.Play();
+            }
+            else
+            {
+                bird3.Load();
+                bird3.Play();
+            }
         }
     }
 }

@@ -27,16 +27,19 @@ namespace Pupu
         public MainWindow()
         {
             InitializeComponent();
+            playsoundOne(null, null); 
         }
 
 
-      
-       //private void playsoundOne(object sender, RoutedEventArgs e)
-       // {
-       //     SoundPlayer playSound = new SoundPlayer(Properties.Resources.Kainbeats___Lonely_views_in_the_park__Ft__Refeeld_);
-       //     playSound.Play();
-       // }
-       
+
+        SoundPlayer playSound = new SoundPlayer(Properties.Resources.bgmusic);
+        private void playsoundOne(object sender, RoutedEventArgs e)
+        {
+            playSound.Load();
+            playSound.PlayLooping();
+        }
+
+
 
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
@@ -68,6 +71,7 @@ namespace Pupu
                 {
                     selectedWindow.Show();
                     this.Hide();
+                    playSound.Stop(); 
                 }
             }
             else

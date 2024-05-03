@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,6 +46,7 @@ namespace Pupu
         {
             InitializeComponent();
             InitializeTimer();
+           
         }
 
         private void InitializeTimer()
@@ -269,13 +271,39 @@ namespace Pupu
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
             timer_energy.Stop();
             timer_health.Stop();
             timer_hunger.Stop();
             timer_mood.Stop();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
+
+        private void catMeowClick(object sender, MouseEventArgs e)
+        {
+            Random random = new Random();
+            int randomSound = random.Next(1, 3);
+
+            SoundPlayer meow1 = new SoundPlayer(Properties.Resources.catMeow1);
+            SoundPlayer meow2= new SoundPlayer(Properties.Resources.catMeow2);
+            SoundPlayer meow3 = new SoundPlayer(Properties.Resources.catMeow3);  
+
+            if (randomSound == 1)
+            {
+                meow1.Load();
+                meow1.Play();
+            }
+            else if (randomSound == 2)
+            {
+                meow2.Load();
+                meow2.Play();
+            }
+            else
+            {
+                meow3.Load();
+                meow3.Play();
+            }
         }
     }
 }

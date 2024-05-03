@@ -113,6 +113,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <Resource Include="Fonts\pixelfont.TTF" />
     <None Include="Properties\Settings.settings">
@@ -169,9 +170,28 @@
     <Resource Include="Icons\energy-removebg.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sound\Kainbeats - Lonely views in the park %28Ft. Refeeld%29.mp3">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\dogSound2.wav" />
+    <None Include="Resources\dogPlaySound.wav" />
+    <None Include="Resources\dogPanting.wav" />
+    <None Include="Resources\dogBark1.wav" />
+    <None Include="Resources\birdSounds.wav" />
+    <None Include="Resources\birdFly.wav" />
+    <None Include="Resources\birdChirp.wav" />
+    <Content Include="Sound\birdChirp.wav" />
+    <Content Include="Sound\birdFly.wav" />
+    <Content Include="Sound\birdSounds.wav" />
+    <Content Include="Sound\dogBark1.wav" />
+    <Content Include="Sound\dogPanting.wav" />
+    <Content Include="Sound\dogPlaySound.wav" />
+    <Content Include="Sound\dogSound2.wav" />
+    <None Include="Resources\bgmusic.wav" />
+    <None Include="Resources\catMeow3.wav" />
+    <None Include="Resources\catMeow2.wav" />
+    <None Include="Resources\catMeow1.wav" />
+    <Content Include="Sound\catMeow1.wav" />
+    <Content Include="Sound\catMeow2.wav" />
+    <Content Include="Sound\catMeow3.wav" />
+    <Content Include="Sound\bgmusic.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

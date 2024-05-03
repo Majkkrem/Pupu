@@ -451,7 +451,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Image Source="/Icons/dog-removebg.png" Margin="241,120,241,26" />
+        <Image Source="/Icons/dog-removebg.png" Margin="241,120,241,26" MouseLeftButtonDown="dogSoundClick" />
         <Image Source="/Icons/hunger-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="83" Width="100" Margin="94,10,0,0"/>
         <Image Source="/Icons/energy-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="75" Width="86" Margin="261,3,0,0"/>
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>

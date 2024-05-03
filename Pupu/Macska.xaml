@@ -642,6 +642,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Image Source="/Icons/cat-removebg.png" Stretch="Uniform" Margin="235,153,235,30" />
+            <Image Source="/Icons/cat-removebg.png" Stretch="Uniform" Margin="235,153,235,30" MouseLeftButtonDown="catMeowClick"/>
+		
     </Grid>
 </Window>
