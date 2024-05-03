@@ -22,27 +22,27 @@
 
         </Canvas>
         <Image Source="/Icons/bird-removebg.png" Margin="176,69,176,0" />
-        <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="50,10,0,0"/>
-        <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="250,5,0,0"/>
+        <Image Source="/Icons/hunger-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="68" Width="95" Margin="38,3,0,0"/>
+        <Image Source="/Icons/energy-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="78" Width="96" Margin="246,-6,0,0"/>
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="460,15,0,0"/>
         <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="61" Margin="655,7,0,0"/>
 
-        <TextBlock x:Name="txtEnergy" Text="Energy: 100" Margin="200,50,429,340" TextAlignment="Center">
+        <TextBlock x:Name="txtEnergy" Text="Energy: 100" Margin="200,50,429,340" TextAlignment="Center" Foreground="GreenYellow">
             <TextBlock.BitmapEffect>
-                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
+                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity="1" Softness="9" />
             </TextBlock.BitmapEffect>
         </TextBlock>
-        <TextBlock x:Name="txtHunger" Text="Hunger: 0" Margin="0,50,629,340" TextAlignment="Center">
+        <TextBlock x:Name="txtHunger" Text="Hunger: 0" Margin="0,50,629,340" TextAlignment="Center" Foreground="GreenYellow">
             <TextBlock.BitmapEffect>
-                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
+                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity="1" Softness="9" />
             </TextBlock.BitmapEffect></TextBlock>
-        <TextBlock x:Name="txtHealth" Text="Health: 100" Margin="600,50,29,340" TextAlignment="Center">
+        <TextBlock x:Name="txtHealth" Text="Health: 100" Margin="600,50,29,340" TextAlignment="Center" Foreground="GreenYellow">
             <TextBlock.BitmapEffect>
-                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
+                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity="1" Softness="9" />
             </TextBlock.BitmapEffect></TextBlock>
-        <TextBlock x:Name="txtMood" Text="Mood: 100" Margin="400,50,229,340" TextAlignment="Center">
+        <TextBlock x:Name="txtMood" Text="Mood: 100" Margin="400,50,229,340" TextAlignment="Center" Foreground="GreenYellow">
             <TextBlock.BitmapEffect>
-                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
+                <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity="1" Softness="9" />
             </TextBlock.BitmapEffect></TextBlock>
         <Button x:Name="btnFeed" Content="Feed" Click="btnFeed_Click" Margin="29,194,691,160">
             <Button.Style>

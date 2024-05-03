@@ -163,6 +163,12 @@
     <Resource Include="Icons\white-flower.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Icons\hunger-removebg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\energy-removebg.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Sound\Kainbeats - Lonely views in the park %28Ft. Refeeld%29.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

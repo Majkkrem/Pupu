@@ -176,6 +176,8 @@ namespace Pupu
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
             timer_energy.Stop();
             timer_health.Stop();

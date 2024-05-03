@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pupu"
         mc:Ignorable="d"
-        Title="Macska" Height="450" Width="800">
+        Title="Pupu the game" Height="450" Width="800">
     <Window.Resources>
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="20"/>
@@ -13,7 +13,7 @@
             <Setter Property="FontFamily" Value="Fonts/Pixelfont.ttf #Common Pixel"/>
         </Style>
     </Window.Resources>
-    
+
     <Grid Background="SkyBlue">
         <Canvas>
             <Image Source="/Icons/grass.png" Height="100" Canvas.Top="345" Width="100" RenderTransformOrigin="0.5,0.5">
@@ -514,8 +514,8 @@
             <Image Source="/Icons/pink-flower.png" Height="357" Canvas.Left="528" Canvas.Top="98" Width="288" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
 
-        <Image Source="/Icons/all hunger status icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="50" Width="71" Margin="105,16,0,0"/>
-        <Image Source="/Icons/all energy status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="60" Width="69" Margin="274,3,0,0"/>
+        <Image Source="/Icons/hunger-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="68" Width="102" Margin="100,3,0,0"/>
+        <Image Source="/Icons/energy-removebg.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="75" Width="101" Margin="274,3,0,0"/>
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>
         <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="62" Margin="632,8,0,0"/>
 
