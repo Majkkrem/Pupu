@@ -29,10 +29,15 @@ namespace Pupu
         private bool sleepStatus = false;
         private bool scratchStatus = false;
 
+        private bool health_box = false;
+        private bool mood_box = false;
+        private bool energy_box = false;
+        private bool hunger_box = false;
+
         private DispatcherTimer timer_energy;
         private DispatcherTimer timer_mood;
         private DispatcherTimer timer_hunger;
-        private DispatcherTimer timer_sleep;
+        private DispatcherTimer timer_health;
 
 
 
@@ -45,24 +50,24 @@ namespace Pupu
         private void InitializeTimer()
         {
             timer_energy = new DispatcherTimer();
-            timer_energy.Interval = TimeSpan.FromSeconds(5);
+            timer_energy.Interval = TimeSpan.FromSeconds(30);
             timer_energy.Tick += Timer_Tick;
             timer_energy.Start();
 
             timer_mood = new DispatcherTimer();
-            timer_mood.Interval = TimeSpan.FromSeconds(18);
+            timer_mood.Interval = TimeSpan.FromSeconds(60);
             timer_mood.Tick += Timer_Tick;
             timer_mood.Start();
 
             timer_hunger = new DispatcherTimer();
-            timer_hunger.Interval = TimeSpan.FromSeconds(16);
+            timer_hunger.Interval = TimeSpan.FromSeconds(40);
             timer_hunger.Tick += Timer_Tick;
             timer_hunger.Start();
 
-            timer_sleep = new DispatcherTimer();
-            timer_sleep.Interval = TimeSpan.FromSeconds(25);
-            timer_sleep.Tick += Timer_Tick;
-            timer_sleep.Start();
+            timer_health = new DispatcherTimer();
+            timer_health.Interval = TimeSpan.FromSeconds(50);
+            timer_health.Tick += Timer_Tick;
+            timer_health.Start();
 
         }
 
@@ -79,7 +84,13 @@ namespace Pupu
             {
                 if (energy == 0)
                 {
-                    MessageBox.Show("Your cat is exhausted! Press the sleep button to recover energy!");
+                    energy_box = true;
+                    if (energy_box == true)
+                    {
+                        MessageBox.Show("Your cat is exhausted! Let it sleep or do activities with it to recover mood meter!");
+                        energy_box = false;
+
+                    }
                 }
                 else if (sleepStatus == true)
                 {
@@ -96,8 +107,14 @@ namespace Pupu
             {
                 if (mood == 0)
                 {
-                    MessageBox.Show("Your cat is moody! Let it sleep or do activities with it to recover mood meter!");
-                    
+                    mood_box = true;
+                    if (mood_box == true)
+                    {
+                        MessageBox.Show("Your cat is moody! Let it sleep or do activities with it to recover mood meter!");
+                        mood_box = false;
+
+                    }
+
                 }
                 else if (sleepStatus == true)
                 {
@@ -111,13 +128,49 @@ namespace Pupu
             }
             else if (sender == timer_hunger)
             {
+
+
                 if (hunger == 100)
                 {
-                    MessageBox.Show("Your cat is starving! Feed it as soon as possible!");
+                    hunger_box = true;
+                    if (hunger_box == true)
+                    {
+                        MessageBox.Show("Your cat is starving! Let it sleep or do activities with it to recover mood meter!");
+                        hunger_box = false;
+                    }
                 }
+                else if (sleepStatus == true)
+                {
+                    hunger += 15;
+                }
+                
                 else
                 {
                     hunger += 5;
+                }
+            }
+
+
+            else if (sender == timer_health)
+            {
+                if (health == 0)
+                {
+                    health_box = true;
+                    if (health_box == true)
+                    {
+                        MessageBox.Show("Your cat is in pretty bad shape! Feed it or play with it to put some life in your pet!");
+                        health_box = false;
+
+                    }
+
+                }
+                else if (sleepStatus == true)
+                {
+                    health += 15;
+                }
+                else
+                {
+                    health -= 8;
 
                 }
             }
@@ -129,8 +182,8 @@ namespace Pupu
 
 
 
-        //TODO: Add sleep button, when clicked it changes to wake up button
-        // when sleeping, the timer tick adds 10 to the sleep status every 3.5 seconds 
+
+
 
         private void ChangeValue()
         {
@@ -149,22 +202,22 @@ namespace Pupu
 
         private void sleep_wake_Click(object sender, RoutedEventArgs e)
         {
-            
-                sleepStatus = !sleepStatus;
 
-                if (sleepStatus)
-                {
-                    timer_sleep.Stop();
-                }
-                else
-                {
-                    timer_sleep.Start();
-                }
+            sleepStatus = !sleepStatus;
 
-                ChangeValue() ;
+            if (sleepStatus)
+            {
+                timer_energy.Stop();
+            }
+            else
+            {
+                timer_energy.Start();
+            }
 
-                
-            
+            ChangeValue();
+
+
+
         }
 
 
@@ -178,28 +231,28 @@ namespace Pupu
             }
 
             if (!scratchStatus)
-                {
-                    mood += 10;
-                    energy -= 15;
-                    health -= 10;
-                    hunger += 10;
-                    ChangeValue();
-                }
-            
+            {
+                mood += 10;
+                energy -= 15;
+                health -= 10;
+                hunger += 10;
+                ChangeValue();
+            }
+
         }
 
         private void play_click(object sender, RoutedEventArgs e)
         {
-             
 
-                if (!sleepStatus)
-                {
-                    mood += 14;
-                    energy -= 20;
-                    hunger += 16;
-                    ChangeValue();
-                }
-            
+
+            if (!sleepStatus)
+            {
+                mood += 14;
+                energy -= 20;
+                hunger += 16;
+                ChangeValue();
+            }
+
         }
 
         private void eat_click(object sender, RoutedEventArgs e)
@@ -207,16 +260,20 @@ namespace Pupu
 
             if (!sleepStatus)
             {
-            energy -= 5;
-            mood += 5;
-            hunger -= 20;
-            ChangeValue();
+                energy -= 5;
+                mood += 5;
+                hunger -= 20;
+                ChangeValue();
             }
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+            timer_energy.Stop();
+            timer_health.Stop();
+            timer_hunger.Stop();
+            timer_mood.Stop();
         }
     }
 }

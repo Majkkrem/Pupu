@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Media;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -29,7 +30,14 @@ namespace Pupu
         }
 
 
-        
+      
+       //private void playsoundOne(object sender, RoutedEventArgs e)
+       // {
+       //     SoundPlayer playSound = new SoundPlayer(Properties.Resources.Kainbeats___Lonely_views_in_the_park__Ft__Refeeld_);
+       //     playSound.Play();
+       // }
+       
+
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
             if (PetComboBox.SelectedItem != null)

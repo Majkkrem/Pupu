@@ -162,5 +162,10 @@
     <Resource Include="Icons\pink-flower.png" />
     <Resource Include="Icons\white-flower.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sound\Kainbeats - Lonely views in the park %28Ft. Refeeld%29.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

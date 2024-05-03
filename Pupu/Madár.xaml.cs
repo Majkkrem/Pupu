@@ -25,7 +25,7 @@ namespace Pupu
         private int energy = 100;
         private int hunger = 0;
         private bool isSleeping = false;
-        private DispatcherTimer timer;
+        private DispatcherTimer timer_health;
         private DispatcherTimer timer_energy;
         private DispatcherTimer timer_mood;
         private DispatcherTimer timer_hunger;
@@ -37,23 +37,23 @@ namespace Pupu
 
         private void InitializeTimer()
         {
-            timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(13);
-            timer.Tick += Timer_Tick;
-            timer.Start();
+            timer_health = new DispatcherTimer();
+            timer_health.Interval = TimeSpan.FromSeconds(50);
+            timer_health.Tick += Timer_Tick;
+            timer_health.Start();
 
             timer_energy = new DispatcherTimer();
-            timer_energy.Interval = TimeSpan.FromSeconds(10);
+            timer_energy.Interval = TimeSpan.FromSeconds(30);
             timer_energy.Tick += Timer_Tick;
             timer_energy.Start();
 
             timer_mood = new DispatcherTimer();
-            timer_mood.Interval = TimeSpan.FromSeconds(8);
+            timer_mood.Interval = TimeSpan.FromSeconds(60);
             timer_mood.Tick += Timer_Tick;
             timer_mood.Start();
 
             timer_hunger = new DispatcherTimer();
-            timer_hunger.Interval = TimeSpan.FromSeconds(15);
+            timer_hunger.Interval = TimeSpan.FromSeconds(40);
             timer_hunger.Tick += Timer_Tick;
             timer_hunger.Start();
         }
@@ -152,11 +152,11 @@ namespace Pupu
             btnSleep.Content = isSleeping ? "Wake Up" : "Sleep";
             if (isSleeping)
             {
-                timer.Stop();
+                timer_health.Stop();
             }
             else
             {
-                timer.Start();
+                timer_health.Start();
             }
             UpdateUI();
         }
@@ -177,6 +177,10 @@ namespace Pupu
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+            timer_energy.Stop();
+            timer_health.Stop();
+            timer_hunger.Stop();
+            timer_mood.Stop();
         }
     }
 }
