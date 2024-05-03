@@ -162,5 +162,11 @@
     <Resource Include="Icons\pink-flower.png" />
     <Resource Include="Icons\white-flower.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\hunger-removebg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\energy-removebg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
