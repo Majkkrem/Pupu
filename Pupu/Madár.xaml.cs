@@ -34,6 +34,7 @@ namespace Pupu
         {
             InitializeComponent();
             InitializeTimer();
+            playsoundOne(null,null);
         }
 
         private void InitializeTimer()
@@ -187,29 +188,31 @@ namespace Pupu
         }
 
 
+        SoundPlayer birdBg = new SoundPlayer(Properties.Resources.birdSounds);
+        private void playsoundOne(object sender, RoutedEventArgs e)
+        {
+            birdBg.Load();
+            birdBg.PlayLooping();
+        }
+
         private void birdSoundClick(object sender, MouseEventArgs e)
         {
             Random random = new Random();
-            int randomSound = random.Next(1, 3);
+            int randomSound = random.Next(1, 2);
 
-            SoundPlayer bird1 = new SoundPlayer(Properties.Resources.birdSounds);
-            SoundPlayer bird2 = new SoundPlayer(Properties.Resources.birdChirp);
-            SoundPlayer bird3 = new SoundPlayer(Properties.Resources.birdFly);
+            
+            SoundPlayer bird1 = new SoundPlayer(Properties.Resources.birdChirp);
+            SoundPlayer bird2 = new SoundPlayer(Properties.Resources.birdFly);
 
-            if (randomSound == 1)
-            {
-                bird1.Load();
-                bird1.Play();
-            }
-            else if (randomSound == 2)
+           if (randomSound == 1)
             {
                 bird2.Load();
                 bird2.Play();
             }
             else
             {
-                bird3.Load();
-                bird3.Play();
+                bird1.Load();
+                bird1.Play();
             }
         }
     }
