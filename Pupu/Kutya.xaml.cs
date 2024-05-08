@@ -35,7 +35,6 @@ namespace Pupu
         private int energy = 100;
         private int hunger = 0;
 
-
         private CancellationTokenSource cts = new CancellationTokenSource();
         private void Timer()
         {
@@ -115,16 +114,42 @@ namespace Pupu
             Update();
         }
 
+        private bool isSleeping = false;
+
         private void sleep_button_Click(object sender, RoutedEventArgs e)
         {
-            cts.Cancel();
-            cts = new CancellationTokenSource();
-            energy = Math.Min(100, energy + 20);
-            mood = Math.Min(100, mood + 20);
-            health = Math.Min(100, health + 20);
-            Timer();
-            Update();
+            isSleeping = !isSleeping; 
 
+            if (isSleeping)
+            {
+                
+                food_button.IsEnabled = false;
+                walk_button.IsEnabled = false;
+                catch_button.IsEnabled = false;
+
+                cts.Cancel();
+                cts = new CancellationTokenSource();
+
+                Task.Run(async () =>
+                {
+                    while (isSleeping)
+                    {
+                        await Task.Delay(TimeSpan.FromSeconds(1));
+                        energy = Math.Min(100, energy + 5);
+                        mood = Math.Min(100, mood + 5);
+                        health = Math.Min(100, health + 5);
+                        Application.Current.Dispatcher.Invoke(() => Update());
+                    }
+                });
+            }
+            else
+            {
+                food_button.IsEnabled = true;
+                walk_button.IsEnabled = true;
+                catch_button.IsEnabled = true;
+
+                Timer();
+            }
         }
 
         private void walk_button_Click(object sender, RoutedEventArgs e)
@@ -156,6 +181,7 @@ namespace Pupu
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+            cts.Cancel();
         }
 
 
@@ -185,8 +211,11 @@ namespace Pupu
             }
         }
 
-
-
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            cts.Cancel();
+        }
 
     }
 }

@@ -185,6 +185,15 @@ namespace Pupu
             timer_health.Stop();
             timer_hunger.Stop();
             timer_mood.Stop();
+
+        }
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            timer_energy.Stop();
+            timer_health.Stop();
+            timer_hunger.Stop();
+            timer_mood.Stop();
         }
 
 
