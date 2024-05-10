@@ -519,22 +519,22 @@
         <Image Source="/Icons/all mood status.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" Width="35" Margin="467,16,0,0"/>
         <Image Source="/Icons/all pet health icon.png"   HorizontalAlignment="Left"  VerticalAlignment="Top" Height="52" Width="62" Margin="632,8,0,0"/>
 
-        <Label Content="Hunger: 0" x:Name="lbl_hunger" HorizontalAlignment="Left" Margin="69,63,0,0" VerticalAlignment="Top" Width="165">
+        <Label Content="Hunger: 0" x:Name="lbl_hunger" HorizontalAlignment="Left" Margin="69,63,0,0" VerticalAlignment="Top" Width="165" Foreground="GreenYellow">
             <Label.BitmapEffect>
                 <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
             </Label.BitmapEffect>
         </Label>
-        <Label Content="Energy: 100" x:Name="lbl_energy" Margin="250,63,385,0" VerticalAlignment="Top">
+        <Label Content="Energy: 100" x:Name="lbl_energy" Margin="250,63,385,0" VerticalAlignment="Top" Foreground="GreenYellow">
             <Label.BitmapEffect>
                 <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
             </Label.BitmapEffect>
         </Label>
-        <Label Content="Mood: 100" x:Name="lbl_mood" Margin="420,63,203,0" VerticalAlignment="Top">
+        <Label Content="Mood: 100" x:Name="lbl_mood" Margin="420,63,203,0" VerticalAlignment="Top" Foreground="GreenYellow">
             <Label.BitmapEffect>
                 <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
             </Label.BitmapEffect>
         </Label>
-        <Label Content="Health: 100" x:Name="lbl_health" Margin="602,63,33,0" VerticalAlignment="Top">
+        <Label Content="Health: 100" x:Name="lbl_health" Margin="602,63,33,0" VerticalAlignment="Top" Foreground="GreenYellow">
             <Label.BitmapEffect>
                 <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="10" Opacity=".5" Softness="9" />
             </Label.BitmapEffect>
