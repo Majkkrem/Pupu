@@ -114,15 +114,42 @@ namespace Pupu
             Update();
         }
 
-        private void sleep_button_Click_1(object sender, RoutedEventArgs e)
+        private bool isSleeping = false;
+
+        private void sleep_button_Click(object sender, RoutedEventArgs e)
         {
-            cts.Cancel();
-            cts = new CancellationTokenSource();
-            energy = Math.Min(100, energy + 20);
-            mood = Math.Min(100, mood + 20);
-            health = Math.Min(100, health + 20);
-            Timer();
-            Update();
+            isSleeping = !isSleeping;
+
+            if (isSleeping)
+            {
+
+                food_button.IsEnabled = false;
+                jump_button.IsEnabled = false;
+                scrach_button.IsEnabled = false;
+
+                cts.Cancel();
+                cts = new CancellationTokenSource();
+
+                Task.Run(async () =>
+                {
+                    while (isSleeping)
+                    {
+                        await Task.Delay(TimeSpan.FromSeconds(1));
+                        energy = Math.Min(100, energy + 5);
+                        mood = Math.Min(100, mood + 5);
+                        health = Math.Min(100, health + 5);
+                        Application.Current.Dispatcher.Invoke(() => Update());
+                    }
+                });
+            }
+            else
+            {
+                food_button.IsEnabled = true;
+                jump_button.IsEnabled = true;
+                scrach_button.IsEnabled = true;
+
+                Timer();
+            }
         }
 
         private void jump_button_Click_1(object sender, RoutedEventArgs e)
@@ -133,7 +160,7 @@ namespace Pupu
             Update();
         }
 
-        private void scrarch_button_Click(object sender, RoutedEventArgs e)
+        private void scrach_button_Click(object sender, RoutedEventArgs e)
         {
             mood = Math.Min(100, mood + 20);
             energy = Math.Max(0, energy - 20);
@@ -154,6 +181,12 @@ namespace Pupu
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            cts.Cancel();
         }
     }
 }

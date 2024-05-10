@@ -32,7 +32,7 @@ namespace Pupu
 
 
 
-        SoundPlayer playSound = new SoundPlayer(Properties.Resources.bgmusic);
+        static SoundPlayer playSound = new SoundPlayer(Properties.Resources.bgmusic);
         private void playsoundOne(object sender, RoutedEventArgs e)
         {
             playSound.Load();
@@ -71,7 +71,7 @@ namespace Pupu
                 {
                     selectedWindow.Show();
                     this.Hide();
-                    playSound.Stop(); 
+                    //playSound.Stop(); 
                 }
             }
             else

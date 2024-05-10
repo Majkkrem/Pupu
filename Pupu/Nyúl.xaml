@@ -270,7 +270,7 @@
 
 
 
-        <Button x:Name="scrarch_button" Margin="691,315,29,39" Click="scrarch_button_Click" >
+        <Button x:Name="scrach_button" Margin="691,315,29,39" Click="scrach_button_Click" >
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>
@@ -333,7 +333,7 @@
             </Button.Template>
         </Button>
 
-        <Button x:Name="sleep_button" Margin="29,315,691,39" Click="sleep_button_Click_1">
+        <Button x:Name="sleep_button" Margin="29,315,691,39" Click="sleep_button_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Style.Triggers>

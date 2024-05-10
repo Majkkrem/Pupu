@@ -164,6 +164,7 @@ namespace Pupu
                         health_box = false;
 
                     }
+                    
 
                 }
                 else if (sleepStatus == true)
@@ -271,15 +272,26 @@ namespace Pupu
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
             timer_energy.Stop();
             timer_health.Stop();
             timer_hunger.Stop();
             timer_mood.Stop();
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
         }
 
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            timer_energy.Stop();
+            timer_health.Stop();
+            timer_hunger.Stop();
+            timer_mood.Stop();
+        }
+
+
+        //Macska hangeffect
         private void catMeowClick(object sender, MouseEventArgs e)
         {
             Random random = new Random();
